@@ -3,14 +3,11 @@ class Background extends Component {
 
     constructor(props) {
       super(props);
-      this.state = {
-        color: props.Color
-      };
     }
 
     render() {
         const stylesObj = {
-          background: this.state.color,
+          background: this.props.Color,
           height: '100vh'
         };
         return (
