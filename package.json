@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "dotenv": "^6.2.0",
     "dotenv-webpack": "^1.5.7",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -23,5 +24,4 @@
     "not ie <= 11",
     "not op_mini all"
   ]
-    "dotenv": "^6.2.0",
 }
