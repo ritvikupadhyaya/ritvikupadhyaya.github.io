@@ -50,6 +50,12 @@
     animation-delay: 1.6s;
 }
 
+.Particles-background {
+  position : absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .App-link {
   color: #62dafb;
 }

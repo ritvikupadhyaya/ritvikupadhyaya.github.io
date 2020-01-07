@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Particles from 'react-particles-js';
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,6 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="Particles-background"> <Particles /> </div>
         <header className="App-header">
           {/*
             <img src={logo} className="App-logo" alt="logo" />
