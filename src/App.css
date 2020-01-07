@@ -20,14 +20,12 @@
 
 .App-title {
   font-size: calc(16px + 5vw);
-  background-color: coral;
 }
 
 .App-subtitle {
   font-size: calc(10px + 2vw);
   position: relative;
   top: 10px;
-  background-color: green;
 }
 
 .App-subtitle-animation {
