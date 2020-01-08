@@ -12,9 +12,7 @@ class App extends Component {
           {/*
             <img src={logo} className="App-logo" alt="logo" />
           */}
-          <div className="App-title">
-            <CreativeTitle title="Ritvik Upadhyaya"/>
-          </div>
+          <CreativeTitle className="App-title" title="Ritvik Upadhyaya"/>
           <div className="App-subtitle">
             <span className="App-subtitle-animation delay-half">Engineer. </span>
             <span className="App-subtitle-animation delay-one">Student. </span>

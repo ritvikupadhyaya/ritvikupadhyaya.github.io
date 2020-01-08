@@ -7,7 +7,7 @@ class CreativeTitle extends Component {
           fontStyle: 'cursive',
         };
     return(
-      <div style={divStyle}>{this.props.title}</div>
+      <div className={this.props.className} style={divStyle}>{this.props.title}</div>
     );
   }
 }
