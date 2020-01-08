@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import logo from './logo.svg';
 import './App.css';
+import CreativeTitle from './components/CreativeTitle';
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="logo" />
           */}
           <div className="App-title">
-            Ritvik Upadhyaya
+            <CreativeTitle title="Ritvik Upadhyaya"/>
           </div>
           <div className="App-subtitle">
             <span className="App-subtitle-animation delay-half">Engineer. </span>

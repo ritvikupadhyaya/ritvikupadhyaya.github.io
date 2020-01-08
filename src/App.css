@@ -8,8 +8,7 @@
 }
 
 .App-header {
-  /* background-color: #191919; */
-  /* background-image: linear-gradient(to bottom, #191919, #151515, #0f0f0f, #080808, #000000); */
+  background-color: #191919;
   background: linear-gradient(to bottom, #191919 50%, #000000 150%);
   min-height: 100vh;
   display: flex;
@@ -22,7 +21,6 @@
 
 .App-title {
   font-size: calc(18px + 5vw);
-  font-family: 'Satisfy', cursive;
 }
 
 .App-subtitle {
