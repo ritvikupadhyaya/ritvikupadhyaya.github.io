@@ -8,7 +8,9 @@
 }
 
 .App-header {
-  background-color: #191919;
+  /* background-color: #191919; */
+  /* background-image: linear-gradient(to bottom, #191919, #151515, #0f0f0f, #080808, #000000); */
+  background: linear-gradient(to bottom, #191919 50%, #000000 150%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,13 +21,16 @@
 }
 
 .App-title {
-  font-size: calc(16px + 5vw);
+  font-size: calc(18px + 5vw);
+  font-family: 'Satisfy', cursive;
 }
 
 .App-subtitle {
-  font-size: calc(10px + 2vw);
+  font-size: calc(10px + 1.5vw);
+  color: #ABABAB;
   position: relative;
   top: 10px;
+  font-family: 'Libre Caslon Display', serif;
 }
 
 .App-subtitle-animation {
