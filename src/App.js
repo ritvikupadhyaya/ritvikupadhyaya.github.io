@@ -7,6 +7,16 @@ import FadeInSubtitle from './components/FadeInSubtitle';
 
 class App extends Component {
   render() {
+    const subtitleFadeDuration = 700;
+    const subtitleFadeInitialDelay = 200;
+    const subtitlesToFadeIn = ["Engineer. ", "Photographer. ", "Nomad."];
+    
+    const subtitlesToRender = subtitlesToFadeIn.map((subtitle, index) =>
+      <FadeInSubtitle title={subtitle}
+                      animDelay={subtitleFadeInitialDelay + index*subtitleFadeDuration}
+                      animDuration={subtitleFadeDuration}/>
+    );
+
     return (
       <div className="App">
         <div className="App-header">
@@ -15,9 +25,7 @@ class App extends Component {
           */}
           <CreativeTitle className="App-title" title="Ritvik Upadhyaya"/>
           <div className="App-subtitle">
-            <FadeInSubtitle title="Engineer. " animDelay={200} animDuration={700}/>
-            <FadeInSubtitle title="Student. " animDelay={900} animDuration={700}/>
-            <FadeInSubtitle title="Nomad." animDelay={1600} animDuration={700}/>
+            {subtitlesToRender}
           </div>
           {/*
             <a
