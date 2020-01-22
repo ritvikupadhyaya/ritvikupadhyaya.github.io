@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import logo from './logo.svg';
 import './App.css';
 import CreativeTitle from './components/CreativeTitle';
+import FadeInSubtitle from './components/FadeInSubtitle';
 
 class App extends Component {
   render() {
@@ -14,9 +15,9 @@ class App extends Component {
           */}
           <CreativeTitle className="App-title" title="Ritvik Upadhyaya"/>
           <div className="App-subtitle">
-            <span className="App-subtitle-animation delay-half">Engineer. </span>
-            <span className="App-subtitle-animation delay-one">Student. </span>
-            <span className="App-subtitle-animation delay-onehalf">Nomad.</span>
+            <FadeInSubtitle title="Engineer. " animDelay={200} animDuration={700}/>
+            <FadeInSubtitle title="Student. " animDelay={900} animDuration={700}/>
+            <FadeInSubtitle title="Nomad." animDelay={1600} animDuration={700}/>
           </div>
           {/*
             <a

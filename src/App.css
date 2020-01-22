@@ -31,28 +31,6 @@
   font-family: 'Libre Caslon Display', serif;
 }
 
-.App-subtitle-animation {
-  opacity: 0;
-  animation: fadeIn ease-out 0.7s forwards;
-  -webkit-animation: fadeIn ease-out 0.7s forwards;
-}
-
-.delay-half {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    animation-delay: 0.2s;
-}
-.delay-one {
-    -webkit-animation-delay: 0.9s;
-    -moz-animation-delay: 0.9s;
-    animation-delay: 0.9s;
-}
-.delay-onehalf{
-    -webkit-animation-delay: 1.6s;
-    -moz-animation-delay: 1.6s;
-    animation-delay: 1.6s;
-}
-
 .Particles-background {
   position : absolute;
   width: 100%;
@@ -69,24 +47,5 @@
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
-/* safari support */
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
   }
 }
