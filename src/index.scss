@@ -7,13 +7,15 @@
 // Constants
 $appDefaultBg: #191919;
 $appBgGradient: linear-gradient(to bottom, #191919 50%, #000000 150%);
-$navbarHeight: 50px;
+$navbarHeight: 7.5vh;
+$navbarMaxHeight: 50px;
 
 $subtitleFont: 'Libre Caslon Display', serif;
 
 //Note: You must prefix imports from node_modules with ~ as displayed above.
 .navbar {
   height: $navbarHeight;
+  max-height: $navbarMaxHeight;
   background-color: $appDefaultBg;
   .navbar-brand {
     color: white;
@@ -26,11 +28,12 @@ $subtitleFont: 'Libre Caslon Display', serif;
 }
 .navbar-light .navbar-text {
   a {
-    color: white;
+    color: grey;
     &:hover {
-      color: grey;
+      color: white;
     }
     font-family: $subtitleFont;
     font-size: calc(12px + 1.2vmin);
+    text-decoration-line: none;
   }
 }
