@@ -3,6 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
+  NotFoundRoute,
   Link
 } from "react-router-dom";
 import './index.scss';
@@ -27,12 +29,9 @@ class App extends Component {
         </Navbar.Text>
       </Navbar>
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route path="/about"> <About /> </Route>
+          <Route exact path="/"> <Home /> </Route>
+          <Route path="*"> <Redirect to="/" /> </Route>
         </Switch>
       </div>
     </Router>

@@ -18,6 +18,8 @@ $subtitleFont: 'Libre Caslon Display', serif;
   max-height: $navbarMaxHeight;
   background-color: $appDefaultBg;
   .navbar-brand {
+    top: 10px;
+    transform: rotate(-10deg);
     color: white;
     &:hover {
       color: grey;
@@ -28,7 +30,7 @@ $subtitleFont: 'Libre Caslon Display', serif;
 }
 .navbar-light .navbar-text {
   a {
-    color: grey;
+    color: #ABABAB;
     &:hover {
       color: white;
     }
