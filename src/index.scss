@@ -7,8 +7,9 @@
 // Constants
 $appDefaultBg: #191919;
 $appBgGradient: linear-gradient(to bottom, #191919 50%, #000000 150%);
-$navbarHeight: 7.5vh;
-$navbarMaxHeight: 50px;
+$appTextGrey: #ABABAB;
+$navbarHeight: 10vh;
+$navbarMaxHeight: 100px;
 
 $subtitleFont: 'Libre Caslon Display', serif;
 
@@ -17,25 +18,33 @@ $subtitleFont: 'Libre Caslon Display', serif;
   height: $navbarHeight;
   max-height: $navbarMaxHeight;
   background-color: $appDefaultBg;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   .navbar-brand {
-    top: 10px;
-    transform: rotate(-10deg);
+    transform: rotate(-15deg);
     color: white;
     &:hover {
-      color: grey;
+      color: $appTextGrey;
     }
-    font-size: calc(12px + 1.5vmin);
-    padding-top: 10px; // Reuqired to align the home link with rest of the menu
+    font-size: calc(15px + 1.5vmin);
+    // padding-top: 15px; // Reuqired to align the home link with rest of the menu
   }
 }
 .navbar-light .navbar-text {
   a {
-    color: #ABABAB;
+    color: white;
+    padding: 15px;
     &:hover {
-      color: white;
+      color: $appTextGrey;
     }
-    font-family: $subtitleFont;
-    font-size: calc(12px + 1.2vmin);
+    // font-family: $subtitleFont;
+    font-size: calc(8px + 1.2vmin);
     text-decoration-line: none;
   }
+}
+.menuBar {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px
 }

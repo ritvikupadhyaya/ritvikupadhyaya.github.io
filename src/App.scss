@@ -28,7 +28,7 @@
 
 .App-subtitle {
   font-size: calc(10px + 1.5vw);
-  color: #ABABAB;
+  color: $appTextGrey;
   position: relative;
   top: 10px;
   font-family: $subtitleFont;

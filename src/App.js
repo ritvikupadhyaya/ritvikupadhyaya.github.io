@@ -23,10 +23,21 @@ class App extends Component {
         <Navbar.Brand href="/">
           <div ><CreativeTitle title="Ritvik Upadhyaya"/></div>
         </Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Text>
-          <a className="navlink" href="/about">About</a>
-        </Navbar.Text>
+        <div className="menuBar">
+          <Navbar.Toggle />
+          <Navbar.Text>
+            <a className="navlink" href="/about">About</a>
+          </Navbar.Text>
+          <Navbar.Text>
+            <a className="navlink" href="/about">Photos</a>
+          </Navbar.Text>
+          <Navbar.Text>
+            <a className="navlink" href="/resume.pdf">Resume</a>
+          </Navbar.Text>
+          <Navbar.Text>
+            <a className="navlink" href="/about">Contact</a>
+          </Navbar.Text>
+        </div>
       </Navbar>
         <Switch>
           <Route path="/about"> <About /> </Route>
