@@ -26,6 +26,9 @@ class App extends Component {
         <div className="menuBar">
           <Navbar.Toggle />
           <Navbar.Text>
+            <a className="navlink" href="/">Home</a>
+          </Navbar.Text>
+          <Navbar.Text>
             <a className="navlink" href="/about">About</a>
           </Navbar.Text>
           <Navbar.Text>
