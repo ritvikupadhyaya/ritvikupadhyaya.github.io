@@ -11,7 +11,8 @@ class Home extends Component {
     const subtitlesToFadeIn = ["Engineer. ", "Photographer. ", "Nomad."];
 
     const subtitlesToRender = subtitlesToFadeIn.map((subtitle, index) =>
-      <FadeInSubtitle title={subtitle}
+      <FadeInSubtitle key={subtitle}
+                      title={subtitle}
                       animDelay={subtitleFadeInitialDelay + index*subtitleFadeDuration}
                       animDuration={subtitleFadeDuration}/>
     );

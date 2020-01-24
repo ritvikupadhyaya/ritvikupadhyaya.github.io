@@ -3,9 +3,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
-  NotFoundRoute,
-  Link
+  Redirect
 } from "react-router-dom";
 import './index.scss';
 import Home from './Pages/Home';
@@ -16,6 +14,19 @@ import CreativeTitle from './components/CreativeTitle';
 
 class App extends Component {
   render() {
+    const menuBarItemsLinkMap = {
+      "Home": "/",
+      "About": "/about",
+      "Photos": "/about",
+      "Resume": "/resume.pdf",
+      "Contact": "/about"
+    };
+    const MenuBar = Object.entries(menuBarItemsLinkMap).map(([key, value]) =>
+        <Navbar.Text key={key}>
+          <a className="navlink" href={value}>{key}</a>
+        </Navbar.Text>
+    );
+
     return (
       <Router>
       <div>
@@ -24,22 +35,7 @@ class App extends Component {
           <div ><CreativeTitle title="Ritvik Upadhyaya"/></div>
         </Navbar.Brand>
         <div className="menuBar">
-          <Navbar.Toggle />
-          <Navbar.Text>
-            <a className="navlink" href="/">Home</a>
-          </Navbar.Text>
-          <Navbar.Text>
-            <a className="navlink" href="/about">About</a>
-          </Navbar.Text>
-          <Navbar.Text>
-            <a className="navlink" href="/about">Photos</a>
-          </Navbar.Text>
-          <Navbar.Text>
-            <a className="navlink" href="/resume.pdf">Resume</a>
-          </Navbar.Text>
-          <Navbar.Text>
-            <a className="navlink" href="/about">Contact</a>
-          </Navbar.Text>
+          {MenuBar}
         </div>
       </Navbar>
         <Switch>
