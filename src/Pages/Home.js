@@ -19,7 +19,7 @@ class Home extends Component {
 
     return (
       <div className="App">
-        <div className="App-header">
+        <div className="Page-Content">
           <CreativeTitle className="App-title" title="Ritvik Upadhyaya"/>
           <div className="App-subtitle">
             {subtitlesToRender}

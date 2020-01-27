@@ -5,8 +5,8 @@ class About extends Component {
   render() {
     return (
       <div>
-      <div className="About-header">
-        <h1>Work in progress.</h1>
+      <div className="WIP-Content">
+        <h1>About page coming up.</h1>
       </div>
       </div>
     );

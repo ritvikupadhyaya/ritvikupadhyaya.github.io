@@ -8,6 +8,8 @@ import {
 import './index.scss';
 import Home from './Pages/Home';
 import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Photos from './Pages/Photos';
 import Navbar from 'react-bootstrap/Navbar';
 import CreativeTitle from './components/CreativeTitle';
 
@@ -17,13 +19,14 @@ class App extends Component {
     const menuBarItemsLinkMap = {
       "Home": "/",
       "About": "/about",
-      "Photos": "/about",
+      "Photos": "/photos",
       "Resume": "/resume.pdf",
-      "Contact": "/about"
+      "Contact": "/Contact"
     };
+    const menuBarItemOpenNewTab = ["Resume"];
     const MenuBar = Object.entries(menuBarItemsLinkMap).map(([key, value]) =>
         <Navbar.Text key={key}>
-          <a className="navlink" href={value}>{key}</a>
+          <a className="navlink" href={value} target={menuBarItemOpenNewTab.includes(key) ? "_blank" : "_self"}>{key}</a>
         </Navbar.Text>
     );
 
@@ -40,6 +43,8 @@ class App extends Component {
       </Navbar>
         <Switch>
           <Route path="/about"> <About /> </Route>
+          <Route path="/contact"> <Contact /> </Route>
+          <Route path="/photos"> <Photos /> </Route>
           <Route exact path="/"> <Home /> </Route>
           <Route path="*"> <Redirect to="/" /> </Route>
         </Switch>

@@ -1,14 +1,1 @@
 @import "../index.scss";
-
-.About-header {
-  background-color: $appBgGradient;
-  background: $appBgGradient;
-  height: calc(100vh - #{$navbarHeight});
-  min-height: calc(100vh - #{$navbarMaxHeight});
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  text-align: center;
-}
