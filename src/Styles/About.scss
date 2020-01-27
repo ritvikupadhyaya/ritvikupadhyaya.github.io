@@ -1,1 +1,26 @@
 @import "../index.scss";
+
+img {
+  width: 50vh;
+  height: auto;
+}
+
+.About-Content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-right: 15vw;
+  margin-left: 15vw;
+}
+
+.About-Text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.About-Description {
+    font-size: calc(16px);
+    padding-top: 10px;
+}

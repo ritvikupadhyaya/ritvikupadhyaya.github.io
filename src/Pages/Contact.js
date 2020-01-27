@@ -5,7 +5,7 @@ class Contact extends Component {
     return (
       <div>
         <div className="WIP-Content">
-          <h1>Contact page coming up.</h1>
+          <h1>Contact page is coming up.</h1>
         </div>
       </div>
     );
